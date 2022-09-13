@@ -16,10 +16,25 @@ body {
   background-color: rgba(255, 0, 0, 0.25);
 }
 
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50px; 
+}
+
 /*main*/
 header {
   height: 80px;
-  background-color: lightblue;
+  background-color: #3161E0;
   display: flex;
   align-items: center;
 }
@@ -28,23 +43,31 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*margin 0 auto*/
 }
 
 header .container .menu ul {
   display: flex;
   list-style: none; 
+  font-weight: 600;
  }
 
- header .container .menu ul li{
-  padding: 5px;
+header .container .menu ul li{
+  padding: 30px;
  }
 
-.container {
-  display: flex;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+header .container .menu ul li:hover{
+  text-decoration: underline;
+ }
+
+ header .container .button {
+  width: 70px;
+  height: 40px;
+  background-color: #FFFFFF;
+  color: #272B2E;
+ }
+
+header .container .button:hover {
+  color: #3161E0;
 }
 
 .jumbotron {
@@ -52,13 +75,55 @@ header .container .menu ul {
   justify-content: center;
   align-items: center;
   height: 550px;
-  background-color: blue;
-  /*padding temporaneo*/
-  /*padding: 150px;*/
+  background-image: url('../img/jumbo.png');
+  background-size: contain;
+}
+
+header, .jumbotron {
+  color: #FFFFFF;
 }
 
 .jumbotron .jumbotron-contents {
   max-width: 800px;
+  text-align: center;
+}
+
+.jumbotron .jumbotron-contents h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.jumbotron .jumbotron-contents p {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  padding: 60px 0 30px;
+}
+
+.jumbotron .jumbotron-contents .cta {
+  display: flex;
+  justify-content: center;
+}
+
+
+.jumbotron .jumbotron-contents .cta .button {
+  margin: 0 20px;
+  height: 57px;
+  background-color: #FFFFFF;
+  color: #272B2E;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 30px;
+}
+
+.jumbotron .jumbotron-contents .cta .button.mac {
+  background-color: #FFFFFF;
+  color: #272B2E;
+}
+
+.jumbotron .jumbotron-contents .cta .button.browser {
+  background-color: #23272A;
+  color: #FAFAFA;
 }
 
 .section-top {
