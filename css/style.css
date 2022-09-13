@@ -11,6 +11,7 @@ body {
 
 
 /*utility*/
+
 .debug {
   border: 1px solid black;
   background-color: white;
@@ -33,6 +34,51 @@ body {
 
 .logo, .chevron, .social-media ul li, footer .footer-upper-part .container .menu ul li, header .container .menu ul {
   cursor: pointer;
+}
+
+.custom-shape-divider-top-1663090039 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1663090039 svg {
+  position: relative;
+  display: block;
+  width: calc(133% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1663090039 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1663095495 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1663095495 svg {
+  position: relative;
+  display: block;
+  width: calc(133% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1663095495 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.section-middle, .section-closure {
+  position: relative;
 }
 
 /*header*/
