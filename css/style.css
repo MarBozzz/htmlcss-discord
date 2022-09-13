@@ -4,10 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*
-body{
+
+body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}*/
+}
 
 
 /*utility*/
@@ -43,15 +43,22 @@ header .container .menu ul {
 .container {
   display: flex;
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .jumbotron {
-  /*height temporanea -> fissa*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 550px;
   background-color: blue;
   /*padding temporaneo*/
-  padding: 150px;
+  /*padding: 150px;*/
+}
+
+.jumbotron .jumbotron-contents {
+  max-width: 800px;
 }
 
 .section-top {
@@ -176,7 +183,6 @@ header .container .menu ul {
 .section-closure .container .contents {
   /*dimensioni temporanee*/
   height: 200px;
-  width: 90%;
   background-color: rgb(20, 132, 140);
   /*background img da inserire*/
   text-align: center;
@@ -196,7 +202,6 @@ header .container .menu ul {
 .section-closure .container .foto4 {
   /*dimensioni temporanee*/
   height: 570px;
-  width: 90%;
   background-color: rgb(46, 45, 146);
   /*temporaneo*/
   text-align: center;
@@ -204,14 +209,12 @@ header .container .menu ul {
 }
 
 .section-closure .container .cta h3 {
-  width: 90%;
   padding-bottom: 20px;
   font-size: 1.5rem;
   text-align: center;
 }
 
 .section-closure .container .cta .download {
-  width: 90%;
   padding-bottom: 140px;
 }
 
@@ -219,21 +222,20 @@ footer {
   /*dimensioni temporanee*/
   height: 670px;
   background-color: #151719;
-  padding: 86px;
+  /*padding: 86px;*/
 }
 
 footer .footer-upper-part {
   padding-bottom: 35px;
   border-bottom: 1px solid black;
-  background-color: beige;
+  /*background-color: beige;*/
 }
 
 .footer-left {
   display: flex;
   flex-direction: column;
   /*dimensioni temporanee*/
-  width: 250px;
-  height: 165px;
+  width: calc(100% / 3)
 }
 
 .footer-left .social-media ul {
@@ -257,7 +259,7 @@ footer .footer-upper-part {
   list-style: none; 
 }
 
-footer .footer-lower-part {
+footer .footer-lower-part .container {
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
