@@ -13,7 +13,7 @@ body {
 /*utility*/
 .debug {
   border: 1px solid black;
-  background-color: rgba(255, 0, 0, 0.25);
+  background-color: white;
 }
 
 .container {
@@ -29,6 +29,10 @@ body {
   align-items: center;
   text-decoration: none;
   border-radius: 50px; 
+}
+
+.logo, .chevron, .social-media ul li, footer .footer-upper-part .container .menu ul li, header .container .menu ul {
+  cursor: pointer;
 }
 
 /*header*/
@@ -82,7 +86,7 @@ header .container .button:hover {
   margin-bottom: 150px;
 }
 
-header, .jumbotron {
+header, .jumbotron, footer {
   color: #FFFFFF;
 }
 
@@ -298,22 +302,49 @@ background-color: #F6F6F6;
 /*footer*/
 footer {
   /*dimensioni temporanee*/
-  height: 670px;
+  /*height: 670px;*/
   background-color: #151719;
+  padding-top: 90px;
   /*padding: 86px;*/
 }
 
 footer .footer-upper-part {
+  display: flex;
   padding-bottom: 35px;
   border-bottom: 1px solid black;
   /*background-color: beige;*/
+}
+
+footer .footer-upper-part .container {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .footer-left {
   display: flex;
   flex-direction: column;
   /*dimensioni temporanee*/
-  width: calc(100% / 3)
+  width: calc(100% / 3);
+  /*min-width: 200px;*/
+}
+
+.footer-left .language .flag span {
+  font-size: 16px;
+}
+
+.footer-left h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #7289DA;
+}
+
+.footer-left .language {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.footer-left .language .flag {
+  width: 24px;
+  height: 16px;
 }
 
 .footer-left .social-media ul {
@@ -326,20 +357,37 @@ footer .footer-upper-part {
   padding: 5px;
  }
 
- footer .footer-upper-part .container .menu-1, footer .footer-upper-part .container .menu-2, footer .footer-upper-part .container .menu-3, footer .footer-upper-part .container .menu-4 {
-  width: 200px;
+ footer .footer-upper-part .container .menu {
+  /*min-width: 100px;
+  width: 100%;*/
   /*dimensioni temporanee*/
   display: flex;
   justify-content: center;
+  width: calc(100% / 6);
  }
 
- footer .footer-upper-part .container .menu-1 ul, footer .footer-upper-part .container .menu-2 ul, footer .footer-upper-part .container .menu-3 ul, footer .footer-upper-part .container .menu-4 ul {
+footer .footer-upper-part .container .menu ul {
   list-style: none; 
 }
+
+footer .footer-upper-part .container .menu ul li {
+  font-size: 16px;
+  line-height: 30px;
+}
+  
+footer .footer-upper-part .container .menu ul li:hover {
+    text-decoration: underline;
+}
+
+footer .footer-upper-part .container .menu ul li:first-child {
+  color: #7289DA;
+}
+
 
 footer .footer-lower-part .container {
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
   background-color: bisque;
+  height: 210px;
  }
